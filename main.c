@@ -31,10 +31,17 @@
     return 0;
 }  
                                             //number 1, the rotation cipher encryption
-                 //takes a letter and prints its ascii number, is it useful?????                           
-   /*int main (){
+    /*             //takes a letter and prints its ascii number, is it useful?????                           
+   int main (){
     char c;             // has letters named c
     scanf("%c", &c);    // scans the c(character) and storres it at c
     printf("%d\n",c);   // %d takes the letter and prints its ascii number
-  return 0;  
-}      */                                   
+  return 0;  */
+}                                        
+// will read an entire sentances until enter key is hit
+ /* int main (){
+    char str[1024];             // has letters named c
+    scanf("%[^\n]s", str);    // scans the input text until enter is hit
+    printf("%s",str);   // prints your whole sentance, white space included
+  return 0;
+  } */
