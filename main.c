@@ -1,6 +1,6 @@
 #include <stdio.h>
 // the starting user interface, where you select what your going to do
-/* int main()
+ int main()
 {
     int x;
     printf("For the encryption of a message with a rotation cipher given cipher text and rotation amount, enter 1\n");       //prints to secreen to prompt user to select an option
@@ -29,6 +29,12 @@
             break;
     }
     return 0;
-}  */
+}  
                                             //number 1, the rotation cipher encryption
-                                            
+                 //takes a letter and prints its ascii number, is it useful?????                           
+   /*int main (){
+    char c;             // has letters named c
+    scanf("%c", &c);    // scans the c(character) and storres it at c
+    printf("%d\n",c);   // %d takes the letter and prints its ascii number
+  return 0;  
+}      */                                   
