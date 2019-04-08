@@ -45,3 +45,21 @@
     printf("%s",str);   // prints your whole sentance, white space included
   return 0;
   } */
+ 
+ // this one prints the ascii characters of the numbers. (assessment run)
+ int main (){
+    int i;
+    char str[1024];             // has letters named c
+    scanf("%[^\n]s", str);    // scans the input text until enter is hit
+    printf("%s\n",str);   // prints your whole sentance, white space included
+    i = 0;
+    while(str[i]!='\0'){            // prints the ascii numbers of the characters
+        printf("%d ", str[i]);
+        i++;
+    } 
+    // now need to take these numbers and make them between
+    if 97-122
+    -32
+  return 0;
+  }
+
