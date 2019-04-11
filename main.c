@@ -57,9 +57,22 @@
         printf("%d ", str[i]);
         i++;
     } 
-    // now need to take these numbers and make them between
-    if 97-122
-    -32
+    // now need to take these numbers and make them between 65-90
+    if (str[i]>=97 && str[i]<=122)
+    { // takes all lower case letters and makes them upper case
+        str[i]=str[i]-32;
+        printf("\n%d", str[i]);  // check if it worked
+        }
+    // now need to make it between 65 and 90
+    if (str[i]>=65 && str[i]<=90)
+    { // takes all characters to 0-25
+        str[i]=str[i]-65;
+        printf("\n%d", str[i]);  // check if it worked
+        }
+        i++;
+    }
+
+        
   return 0;
   }
 
