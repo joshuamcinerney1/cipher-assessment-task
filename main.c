@@ -113,6 +113,7 @@
 
   return 0;
   }*/
+ 
  this the the answer to the first question and it fucking works!!!!!!!!
    int main (){
     int i; 
@@ -159,7 +160,8 @@
   }
   // could mute the unnecessary prints in the final bit
   // decryption of the code with given key
-  actual thing that fucking works!!!! Q2 answer
+ 
+ actual thing that fucking works!!!! Q2 answer
     int main (){
     int i;
     int k;
@@ -202,5 +204,6 @@
 
   return 0;
   } 
-  
+ // question 3, 
+ 
 
