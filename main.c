@@ -115,7 +115,7 @@
   }*/
  this the the answer to the first question and it fucking works!!!!!!!!
    int main (){
-    int i;
+    int i; 
     int k;
     char str[1024];             // has letters named c
     
@@ -157,4 +157,6 @@
 
   return 0;
   }
+  
+  
 
