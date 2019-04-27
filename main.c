@@ -256,9 +256,11 @@
         /*if(str[i]==ref[i]){  // compares the character to the reference string to find its location in the string
             str[i]=sub[i];   // uses the location to allocate the correct substution
         } else if(str[i]!=ref[i]){ */
+       
+       //takes the number and substutes it into the substution array
         if(i<26){  
-           k=str[i];
-           str[i]=sub[k]; 
+           k=str[i];  // takes the number from str and turns it to an integer
+           str[i]=sub[k]; //uses the integer to locate the correct position in sub[] and substutes the number accordingly
         
      
             
