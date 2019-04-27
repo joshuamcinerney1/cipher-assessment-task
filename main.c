@@ -205,5 +205,76 @@
   return 0;
   } 
  // question 3, 
+ //works for all letters, must now solve the white space issue
+ 
+ #include <stdio.h>
+#include <string.h>
+
+   int main (){
+    int i; 
+    int k;
+    char str[1024];         // has letters named c
+    
+    
+   /* printf("enter the encryption key: ");  // enter the encryption key
+    scanf("%d", &k); */
+    printf("enter message: "); // enter the message that will be incrypted
+    scanf(" %[^\n]s", str);     // scans the input text until enter is hit
+    printf("%s\n",str);   // prints your whole sentance, white space included
+    i = 0;
+    while(str[i]!='\0'){            // prints the ascii numbers of the characters
+        printf("\n%d", str[i]);
+        
+     
+    // now need to take these numbers and make them between 65-90
+    if (str[i]>=97 && str[i]<=122)
+    { // takes all lower case letters and makes them upper case
+        str[i]=str[i]-32;
+        printf("\n%d", str[i]);  // check if it worked
+    }
+    // now need to make it between 65 and 90
+    if (str[i]>=65 && str[i]<=90)
+    { // takes all characters to 0-25
+        str[i]=str[i]-65;
+        printf("\n%d", str[i]);  // check if it worked
+        }
+        
+        
+   /* // now take the 0-25 number and increment it by the key
+    if (str[i]>=0 && str[i]<=25)
+    { // takes all characters between 0-25 and increments the by the key
+        str[i]=((str[i]+k)%26); */
+        
+        // compares strings and does substution
+        // intitalise string
+         int ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
+         int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to encrypt the entered text
+        
+        // find number in reference string and record how far along it is, then go to the substution
+        // string and go the same distance along it, then replace the first value with the substution value
+       
+        /*if(str[i]==ref[i]){  // compares the character to the reference string to find its location in the string
+            str[i]=sub[i];   // uses the location to allocate the correct substution
+        } else if(str[i]!=ref[i]){ */
+        if(i<26){  
+           k=str[i];
+           str[i]=sub[k]; 
+        
+     
+            
+        
+        
+        printf("\n%d", str[i]);  // check if it worked
+        // takes the encrypted number and adds 65 to make it the corresponding ascii character
+        str[i]=str[i]+65;
+        
+        }
+        i++;  // gets next letter from string and puts it through the above
+    }
+    
+    printf("\n%s", str); // prints encrypted text to the screen
+
+  return 0;
+  }
  
 
