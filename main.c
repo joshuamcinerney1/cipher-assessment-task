@@ -206,7 +206,7 @@
   } 
  // question 3, 
  //works for all letters, must now solve the white space issue
- 
+ /*
  #include <stdio.h>
 #include <string.h>
 
@@ -277,9 +277,200 @@
     printf("\n%s", str); // prints encrypted text to the screen
 
   return 0;
+  } */
+  //Q3 solved with NO WHITE SPACE ISSUE !!!!!!
+   #include <stdio.h>
+#include <string.h>
+
+   int main (){
+    int i; 
+    int k;
+    char str[1024];         // has letters named c
+    
+    
+
+    printf("enter message: "); // enter the message that will be incrypted
+    scanf(" %[^\n]s", str);     // scans the input text until enter is hit
+    printf("%s\n",str);   // prints your whole sentance, white space included
+    i = 0;
+    while(str[i]!='\0'){            // prints the ascii numbers of the characters
+        printf("\n%d", str[i]);
+        
+     
+    // now need to take these numbers and make them between 65-90
+    if (str[i]>=97 && str[i]<=122)
+    { // takes all lower case letters and makes them upper case
+        str[i]=str[i]-32;
+        printf("\n%d", str[i]);  // check if it worked
+    }
+    // now need to make it between 65 and 90
+    if (str[i]>=65 && str[i]<=90)
+    { // takes all characters to 0-25
+        str[i]=str[i]-65;
+        printf("\n%d", str[i]);  // check if it worked
+        }
+        
+        
+
+        
+        
+        // intitalise string
+         int ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
+         int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to encrypt the entered text
+        
+
+        
+                // use a switch case to manually substute each number
+        
+        switch (str[i])
+        {
+            case 0: str[i]=5;
+                printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                str[i]=str[i]+65;
+                break;
+            case 1: str[i]=20;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 2: str[i]=16;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;                        
+                break;
+            case 3: str[i]=23;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 4: str[i]=1;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 5: str[i]=10;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 6: str[i]=9;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 7: str[i]=18;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 8: str[i]=25;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 9: str[i]=12;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 10: str[i]=3;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 11: str[i]=14;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 12: str[i]=17;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 13: str[i]=6;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 14: str[i]=21;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 15: str[i]=8;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 16: str[i]=2;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 17: str[i]=7;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 18: str[i]=11;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 19: str[i]=15;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 20: str[i]=24;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 21: str[i]=13;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 22: str[i]=4;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 23: str[i]=0;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 24: str[i]=19;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+            case 25: str[i]=22;
+                    printf("\n%d", str[i]);  // check if it worked
+                                            // takes the encrypted number and adds 65 to make it the corresponding ascii character
+                    str[i]=str[i]+65;
+                break;
+                
+            default: str[i]=str[i];   // this send all white space through without getting 'encrypted'
+                break;
+
+        
+        }
+        i++;  // gets next letter from string and puts it through the above
+    }
+    
+    printf("\n%s", str); // prints encrypted text to the screen
+
+  return 0;
   }
   
-  // Q4 SOLVED WITH NO WHITE SPACE ISSUE!!!!
+ 
+ 
+ // Q4 SOLVED WITH NO WHITE SPACE ISSUE!!!!
    #include <stdio.h>
 #include <string.h>
 
