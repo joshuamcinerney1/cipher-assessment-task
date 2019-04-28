@@ -38,7 +38,7 @@
     scanf("%c", &c);    // scans the c(character) and storres it at c
     printf("%d\n",c);   // %d takes the letter and prints its ascii number
   return 0;  */
-}                                        
+                                       
 // will read an entire sentances until enter key is hit
  /* int main (){
     char str[1024];             // has letters named c
@@ -712,7 +712,8 @@
         
         }
         i++;  // gets next letter from string and puts it through the above
-    
+
+
     
     printf("\n%s", str); // prints encrypted text to the screen
                 }
@@ -779,8 +780,8 @@
                     }
         
                 // intitalise strings, good reference (is it necessary??)
-         int ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
-         int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to encrypt the entered text
+            // ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
+            //int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to encrypt the entered text
         
                 // use a switch case to manually substute each number
         
@@ -950,8 +951,8 @@
                     }
 
                 // intitalise string, (is it necessary here???)
-                int ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
-                int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to de-crypte the entered text
+                //int ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
+                //int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to de-crypte the entered text
          
                 // use a switch case to manually substute each number
         
