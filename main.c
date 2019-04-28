@@ -216,8 +216,8 @@
     char str[1024];         // has letters named c
     
     
-   /* printf("enter the encryption key: ");  // enter the encryption key
-    scanf("%d", &k); */
+    printf("enter the encryption key: ");  // enter the encryption key
+    scanf("%d", &k); 
     printf("enter message: "); // enter the message that will be incrypted
     scanf(" %[^\n]s", str);     // scans the input text until enter is hit
     printf("%s\n",str);   // prints your whole sentance, white space included
@@ -240,10 +240,10 @@
         }
         
         
-   /* // now take the 0-25 number and increment it by the key
+    // now take the 0-25 number and increment it by the key
     if (str[i]>=0 && str[i]<=25)
     { // takes all characters between 0-25 and increments the by the key
-        str[i]=((str[i]+k)%26); */
+        str[i]=((str[i]+k)%26); 
         
         // compares strings and does substution
         // intitalise string
@@ -253,9 +253,9 @@
         // find number in reference string and record how far along it is, then go to the substution
         // string and go the same distance along it, then replace the first value with the substution value
        
-        /*if(str[i]==ref[i]){  // compares the character to the reference string to find its location in the string
+        if(str[i]==ref[i]){  // compares the character to the reference string to find its location in the string
             str[i]=sub[i];   // uses the location to allocate the correct substution
-        } else if(str[i]!=ref[i]){ */
+        } else if(str[i]!=ref[i]){ 
        
        //takes the number and substutes it into the substution array
         if(i<26){  
@@ -277,7 +277,8 @@
     printf("\n%s", str); // prints encrypted text to the screen
 
   return 0;
-  } */
+  } 
+  */
   //Q3 solved with NO WHITE SPACE ISSUE !!!!!!
    #include <stdio.h>
 #include <string.h>
