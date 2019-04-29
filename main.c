@@ -678,17 +678,17 @@
     scanf("%d", &x);   // sets value of x for the swich loop, allows program to select what it will be doing
     
     switch (x)          // chooses between the 6 options and proceeds with the selected option
-    {
-        case 1: printf("you have selected option 1\n");
+    {   
+        case 1: printf("you have selected option 1\n"); //this case runs the rotation cipher encryption 
         
-                printf("enter the encryption key: ");  // enter the encryption key
-                scanf("%d", &k);
+                printf("enter the encryption key: ");  // enter the encryption key into the computer
+                scanf("%d", &k);            // this scans the input text and stores it in location k
                 printf("enter message: "); // enter the message that will be incrypted
                 scanf(" %[^\n]s", str);    // scans the input text until enter is hit
                 printf("%s\n",str);   // prints your whole sentance, white space included
                 i = 0;
-                while(str[i]!='\0'){            // prints the ascii numbers of the characters
-                    printf("\n%d", str[i]);
+                while(str[i]!='\0'){            
+                    printf("\n%d", str[i]);     // prints the ascii numbers of the characters
      
      // now need to take these numbers and make them between 65-90
                     if (str[i]>=97 && str[i]<=122)
@@ -720,7 +720,7 @@
  
             break;
             
-        case 2: printf("you have selected option 2\n");
+        case 2: printf("you have selected option 2\n");  // this case runs the rotation cipher de-cryption
         
                 printf("enter the de-cryption key: ");  // enter the de-cryption key
                 scanf("%d", &k);
@@ -728,8 +728,8 @@
                 scanf(" %[^\n]s", str);    // scans the input text until enter is hit
                 printf("%s\n",str);   // prints your whole sentance, white space included
                 i = 0;
-                while(str[i]!='\0'){            // prints the ascii numbers of the characters
-                    printf("\n%d", str[i]);
+                while(str[i]!='\0'){            
+                    printf("\n%d", str[i]);     // prints the ascii numbers of the characters
         
                 // now need to take these numbers and make them between 65-90
                         if (str[i]>=97 && str[i]<=122)
@@ -757,14 +757,14 @@
             
             break;
             
-        case 3: printf("you have selected option 3\n");
+        case 3: printf("you have selected option 3\n");  //this runs the substution cipher encryption
         
                 printf("enter message: "); // enter the message that will be incrypted
                 scanf(" %[^\n]s", str);     // scans the input text until enter is hit
                 printf("%s\n",str);   // prints your whole sentance, white space included
                 i = 0;
-                while(str[i]!='\0'){            // prints the ascii numbers of the characters
-                    printf("\n%d", str[i]);
+                while(str[i]!='\0'){            
+                    printf("\n%d", str[i]);     // prints the ascii numbers of the characters
         
                 // now need to take these numbers and make them between 65-90
                 if (str[i]>=97 && str[i]<=122)
@@ -779,12 +779,12 @@
                     printf("\n%d", str[i]);  // check if it worked
                     }
         
-                // intitalise strings, good reference (is it necessary??)
+                // intitalise strings, good reference (this is the substution that the program will use)
             // ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
             //int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to encrypt the entered text
         
                 // use a switch case to manually substute each number
-        
+    
                 switch (str[i])
                 {
                     case 0: str[i]=5;
@@ -927,14 +927,14 @@
         
             break;
             
-        case 4: printf("you have selected option 4\n");
+        case 4: printf("you have selected option 4\n");  //this runs the substution cipher decryption (same key as above)
                 
                 printf("enter message: "); // enter the message that will be de-crypted
                 scanf(" %[^\n]s", str);     // scans the input text until enter is hit
                 printf("%s\n",str);   // prints your whole sentance, white space included
                 i = 0;
-                while(str[i]!='\0'){            // prints the ascii numbers of the characters
-                    printf("\n%d", str[i]);
+                while(str[i]!='\0'){            
+                    printf("\n%d", str[i]);     // prints the ascii numbers of the characters
         
      
                 // now need to take these numbers and make them between 65-90
@@ -950,7 +950,7 @@
                     printf("\n%d", str[i]);  // check if it worked
                     }
 
-                // intitalise string, (is it necessary here???)
+                // intitalise string, (this is the substution that the program will use)
                 //int ref[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; //reference array used later to complete the substution
                 //int sub[26]={5,20,16,23,1,10,9,18,25,12,3,14,17,6,21,8,2,7,11,15,24,13,4,0,19,22}; //substution set used to de-crypte the entered text
          
